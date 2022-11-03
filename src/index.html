@@ -8,22 +8,94 @@
         <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     </head>
     <body>
-        <div class="header">
-            <ion-icon name="menu"></ion-icon>
-            <p>Beneflex</p>
-            <ion-icon name="contact"></ion-icon>
+        <div class="container">
+            <div class="header">
+                <ion-icon name="menu"></ion-icon>
+                <p>Beneflex</p>
+                <ion-icon name="contact"></ion-icon>
+            </div>
+            <div class="content">
+                <img class="myImg" src="https://www.educamundo.com.br/uploads/blog_posts/featured_images/teorias-administracao-3.jpg" alt="Paris">
+                <div class="buttonsContainer">
+                    <button class="myButton primary">Meus Benefícios</button>
+                    <button class="myButton secondary">Honorários</button>
+                </div>
+            </div>
+            <div class="footer">
+                ® 2022 Beneflex S.A. Todos os direitos reservados 
+            </div>
         </div>
     </body>
 </html>
 
 <style>
+html, body {
+    height:100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: fit-content(800px) 1fr fit-content(800px);
+    background-color:   white;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    background-color: #165E5C;
+    height: fit-content;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.myImg {
+    align-self: center;
+    justify-self: center;
+}
 
 .header{
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     align-items: center;
     background-color: #165E5C;
+}
+
+.buttonsContainer {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.primary {
+    background-color: #165E5C;
+}
+
+.secondary {
+    background-color: #FCC352;
+}
+
+.myButton {
+    align-self: center;
+    justify-self: center;
+    border-width: 4px;
+    border-color: yellow;
+    width: 800px;
+    height: 200px;
+    border-radius: 50px;
+    font-size: 72px;
+    color: white;
+    font-weight: bolder;
 }
 
 p {
